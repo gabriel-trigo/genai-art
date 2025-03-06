@@ -1,0 +1,28 @@
+[project]
+name = "genai-art"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "suri",email = "chensuyuxm@gmail.com"}
+]
+readme = "README.md"
+include = [
+    "core/*"
+]
+packages = ["genai_art"]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "imageio (>=2.37.0,<3.0.0)",
+    "matplotlib (>=3.10.1,<4.0.0)",
+    "tensorflow (>=2.18.0,<3.0.0)",
+    "scipy (>=1.15.2,<2.0.0)",
+    "tensorflow-io (>=0.37.1,<0.38.0)",
+    "numpy (<2.2.3)",
+    "torch (>=2.6.0,<3.0.0)",
+    "torchvision (>=0.21.0,<0.22.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
